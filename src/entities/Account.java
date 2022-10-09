@@ -3,11 +3,11 @@ package entities;
 public class Account {
 
 	private Integer number;
-	private String holder; //titular
+	private String holder; // titular
 	protected Double balance;
-	
+
 	public Account() {
-		
+
 	}
 
 	public Account(Integer number, String holder, Double balance) {
@@ -39,16 +39,13 @@ public class Account {
 //	public void setBalance(Double balance) {
 //		this.balance = balance;
 //	} // Não é utilizado, pois não se pode  mudar livremente o saldo da conta
-	
-	
-	public void withdraw (Double amount) {
-		balance -= amount;
+
+	public void withdraw(Double amount) {
+		balance -= amount + 5.0;
 	}
-	
-	public void deposit (Double amount) {
+
+	public void deposit(Double amount) {
 		balance += amount;
 	}
-	
-	
-	
+
 }
